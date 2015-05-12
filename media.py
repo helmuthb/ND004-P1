@@ -9,7 +9,10 @@ class Movie:
     
     def __init__(self, title, story_line, poster_image_url,
                  trailer_youtube_url, actors, release_date):
-        # copy arguments into fields of the same name in the object
+        # copy arguments into fields of the same name in the object.
+        # The initializer function can be called with positional as
+        # well as named arguments - for readibility the later form is
+        # preferred.
         self.title               = title
         self.story_line          = story_line
         self.poster_image_url    = poster_image_url

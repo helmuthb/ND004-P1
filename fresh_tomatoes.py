@@ -154,7 +154,8 @@ def open_movies_page(movies):
   rendered_content = main_page_content.format(movie_tiles=create_movie_tiles_content(movies))
 
   # Output the file
-  output_file.write("<!DOCTYPE html>\n<html>" + main_page_head + rendered_content + "</html>")
+  output_file.write("<!DOCTYPE html>\n<html lang='en'>" +
+                    main_page_head + rendered_content + "</html>")
   output_file.close()
 
   # open the output file in the browser
